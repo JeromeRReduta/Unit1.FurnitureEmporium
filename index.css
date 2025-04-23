@@ -1,0 +1,58 @@
+:root {
+  --egg-shell-white: #f0ead6;
+  --gold: #fed766;
+  --red: #f72c25;
+  font-family: "Comic Sans MS";
+}
+
+p {
+  text-align: justify;
+}
+
+body {
+  background-color: var(--egg-shell-white);
+}
+
+.product-card,
+.item-name,
+.item-info,
+.description,
+.price-and-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin: 2%;
+  flex: 0 1 auto;
+}
+
+.product-card {
+  background-color: var(--gold);
+}
+
+.item-name {
+  flex: 0 1 25%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-info {
+  flex-direction: column;
+  flex: 0 1 75%;
+  font-size: 1rem;
+}
+
+.description {
+  flex: 0 1 75%;
+}
+
+.price-and-button {
+  flex: 0 1 25%;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+}
+
+.price-and-button button {
+  background-color: var(--red);
+}
